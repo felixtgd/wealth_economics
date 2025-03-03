@@ -29,7 +29,8 @@
 				"hediet.vscode-drawio",
 				"github.copilot",
 				"gitHub.copilot-chat",
-				"charliermarsh.ruff"
+				"charliermarsh.ruff",
+        		"ms-python.mypy-type-checker"
 			]
 		}
 	},

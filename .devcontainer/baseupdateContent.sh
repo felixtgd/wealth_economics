@@ -3,7 +3,7 @@ function preConfig() {
     sudo apt -y upgrade
     sudo apt-get install graphviz fzf exa tmux -y
     pip install --upgrade pip
-    pip install -r backend/requirements.txt --user
+    pip install -r requirements.txt --user
 }
 
 
@@ -14,11 +14,11 @@ function postConfig(){
     git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 
     # Neovim text editor
-    curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux64.tar.gz
+    curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux-x86_64.tar.gz
     sudo rm -rf /opt/nvim
-    sudo tar -C /opt -xzf nvim-linux64.tar.gz
-    rm nvim-linux64.tar.gz
-    export PATH=$PATH:/opt/nvim-linux64/bin
+    sudo tar -C /opt -xzf nvim-linux-x86_64.tar.gz
+    rm nvim-linux-x86_64.tar.gz
+    export PATH=$PATH:/opt/nvim-linux-x86_64/bin
 
     # fzf-tab for improved tab completion in Zsh
     git clone https://github.com/Aloxaf/fzf-tab ~/fzf-tab
